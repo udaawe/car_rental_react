@@ -1,0 +1,309 @@
+/* body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Navbar */
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.navbar {
+  background-color: #f1f3ff;
+  background-size: cover;
+}
+
+.nav-link {
+  font-weight: 400;
+  font-size: 14px;
+}
+/* End Navbar */
+
+/* Header */
+.lets-begin {
+  background-color: #f1f3ff;
+  background-size: cover;
+}
+
+.lets-begin h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.lets-begin p {
+  font-weight: 700;
+  font-size: 14px;
+}
+.btn-success {
+  background-color: #5cb85f;
+  /* padding: 4px 48px !important; */
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+}
+/* End Header */
+
+/*section*/
+.best-car-rental h2 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.best-car-rental {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Main */
+.card {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 16px;
+  width: 268px;
+  height: 214px;
+}
+.why-us h4 {
+  font-weight: 700;
+  font-size: 24px;
+}
+.card h1 {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* Testimonial */
+.testimonial h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.testimonial p {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.owl-carousel h5 {
+  color: #fff;
+  font-size: 18px;
+}
+
+.owl-carousel p {
+  color: #dddddd;
+  font-size: 14px;
+}
+
+.owl-carousel .card-body {
+  background-color: #f1f3ff;
+}
+
+.owl-carousel img {
+  height: 80px !important;
+  width: 80px !important;
+}
+
+.owl-carousel p {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000000;
+}
+
+.testimonial-body {
+  padding: 35px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-items: space-between;
+  align-items: center;
+}
+
+.rounded-circle {
+  margin-right: 35px;
+}
+
+.offcanvas {
+  max-width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+}
+
+/* mulai sewa mobil */
+.mulai-sewa-mobil {
+  background-color: #0d28a6;
+  border-radius: 15px;
+}
+
+.mulai-sewa-mobil h2 {
+  text-align: center;
+  margin-top: 64px;
+  font-size: 36px;
+  color: #ffff;
+  font-family: Arial;
+  font-weight: 700;
+}
+
+.mulai-sewa-mobil p {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+  color: #ffff;
+  font-family: Arial;
+  font-weight: 700;
+}
+
+.btn-mulai {
+  background-color: #5cb85f;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 514px;
+  margin-bottom: 25px;
+}
+
+/* Frequently Asked Question */
+.dropdown-toggle {
+  border-color: #d4d4d4;
+}
+
+/* Footer */
+.section-footer p {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.about a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #000;
+}
+
+.footer-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+/* list-car */
+
+.list-car {
+  position: relative;
+  margin-top: -50px;
+  padding-left: 6%;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.btn-listcar {
+  color: #0d28a6;
+  background-color: transparent;
+  border: 1px solid #0d28a6;
+  padding: 5px 48px !important;
+  margin-top: 26px;
+}
+
+.form-select {
+  border-color: #5cb85f;
+}
+
+/* Car Detail */
+.car-list {
+  margin-top: 40px;
+  margin-bottom: 200px;
+  width: 333px;
+  height: 450px;
+}
+
+.car-list h5 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.car-list h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.car-list p {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.btn-car-list {
+  padding: 9px 88px;
+}
+
+/* Cardetail */
+
+.car-detail {
+  margin-bottom: 200px;
+  width: 605px;
+  height: 618px;
+}
+
+.car-detail ul {
+  margin-top: -44px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #8a8a8a;
+}
+
+.car-detail h5 {
+  margin-top: -24;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.collapses {
+  width: -webkit-fill-available;
+}
+.arrow-toggle .fa-chevron-down,
+.arrow-toggle.collapsed .fa-chevron-up {
+  display: inline-block;
+  color: #000;
+}
+
+.arrow-toggle.collapsed .fa-chevron-down,
+.arrow-toggle .fa-chevron-up {
+  display: none;
+  color: #000;
+}
+
+.car-detail-2 {
+  height: 435px;
+  width: 487px;
+}
+
+.card-text {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.total-price {
+  width: -webkit-fill-available;
+}
+
+.price {
+  text-align: end;
+}
