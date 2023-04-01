@@ -1,7 +1,7 @@
 import { Col, Card } from "reactstrap";
-import img from "../assets/img/car.png";
+import { Link } from "react-router-dom";
 
-const ListMobil = ({ name, price, image }) => {
+const ListMobil = ({ id, name, price, image }) => {
   return (
     <Col md={4}>
       <Card className="car-list">
@@ -13,9 +13,9 @@ const ListMobil = ({ name, price, image }) => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p> */}
-          <a href="#" class="btn btn-success btn-car-list">
+          <Link to={`/searchcar/${id}`} class="btn btn-success btn-car-list">
             Pilih Mobil
-          </a>
+          </Link>
         </div>
       </Card>
     </Col>

@@ -28,7 +28,12 @@ const SearchCar = () => {
       <Container>
         <Row>
           {cars.map((car) => (
-            <ListMobil name={car.name} image={car.image} price={car.price} />
+            <ListMobil
+              id={car.id}
+              name={car.name}
+              image={car.image}
+              price={car.price}
+            />
           ))}
         </Row>
       </Container>

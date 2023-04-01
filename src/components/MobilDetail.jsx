@@ -12,7 +12,7 @@ import {
 } from "reactstrap";
 import img from "../assets/img/car.png";
 
-const MobilDetail = () => {
+const MobilDetail = ({ name, image, price }) => {
   const [open, setOpen] = useState("1");
   const toggle = (id) => {
     if (open === id) {
@@ -79,12 +79,12 @@ const MobilDetail = () => {
         </Col>
         <Col md={6}>
           <div class="card car-detail-2 mt-5">
-            <img src={img} class="card-img-top" alt="..." />
+            <img src={image} class="card-img-top" alt="..." />
             <div class="card-body">
-              <p class="card-text">Innova</p>
+              <p class="card-text">{name}</p>
               <div className="car-price">
                 <h3>Total</h3>
-                <h3>Rp 13.000</h3>
+                <h3>Rp {price}</h3>
               </div>
             </div>
           </div>
