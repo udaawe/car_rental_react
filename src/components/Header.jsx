@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 import logo from "../assets/img/img_car.png";
 const Header = () => {
@@ -14,7 +15,9 @@ const Header = () => {
               <br />
               untuk sewa mobil selama 24 jam.
             </p>
-            <a class="btn  btn-success">Mulai Sewa Mobil</a>
+            <Link to="/searchcar" class="btn  btn-success">
+              Mulai Sewa Mobil
+            </Link>
           </Col>
           <Col md={6}>
             <img src={logo} class="responsive" alt="#" />
