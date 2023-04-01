@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import axios from "axios";
+import { Container, Row } from "reactstrap";
 
 const SearchCar = () => {
   const [cars, setCars] = useState([]);
@@ -24,9 +25,13 @@ const SearchCar = () => {
       <NavBar />
       <Header />
       <CariMobil />
-      {cars.map((car) => (
-        <ListMobil name={car.name} image={car.image} price={car.price} />
-      ))}
+      <Container>
+        <Row>
+          {cars.map((car) => (
+            <ListMobil name={car.name} image={car.image} price={car.price} />
+          ))}
+        </Row>
+      </Container>
       <Footer />
     </div>
   );
