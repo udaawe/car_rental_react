@@ -55,7 +55,7 @@
 }
 
 /* Main */
-.card {
+.why-us .card {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
@@ -205,7 +205,7 @@
 
 .list-car {
   position: relative;
-  margin-top: -50px;
+  margin-top: -90px;
   padding-left: 6%;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -258,12 +258,10 @@
 
 .car-detail {
   margin-bottom: 200px;
-  width: 605px;
-  height: 618px;
+  padding: 20px;
 }
 
 .car-detail ul {
-  margin-top: -44px;
   font-size: 14px;
   font-weight: 700;
   color: #8a8a8a;
@@ -295,6 +293,10 @@
   width: 487px;
 }
 
+.accordion-item {
+  border: 0;
+}
+
 .card-text {
   font-size: 14px;
   font-weight: 700;
@@ -306,4 +308,24 @@
 
 .price {
   text-align: end;
+}
+
+.accordion-button {
+  box-shadow: none !important;
+  background-color: transparent !important;
+  color: #000 !important;
+}
+
+.car-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* width: 100%; */
+  flex-grow: 1;
+}
+
+.empty {
+  background: #f1f3ff;
+  height: 250px;
+  width: 100%;
 }
