@@ -15,6 +15,8 @@ const SearchCar = () => {
   const nameParams = searchParams.get("name");
   const categoryParams = searchParams.get("category");
   const statusParams = searchParams.get("status");
+  const minPriceParams = searchParams.get("minPrice");
+  const maxPriceParams = searchParams.get("maxPrice");
 
   useEffect(() => {
     async function getCars() {
@@ -30,13 +32,24 @@ const SearchCar = () => {
       if (statusParams) {
         params.append("isRented", statusParams);
       }
+
+      if (minPriceParams && maxPriceParams) {
+        params.append("minPrice", minPriceParams);
+        params.append("maxPrice", maxPriceParams);
+      }
       const response = await axios.get(
         `https://bootcamp-rent-cars.herokuapp.com/customer/v2/car?${params.toString()}`
       );
       setCars(response.data.cars);
     }
     getCars();
-  }, [nameParams, categoryParams, statusParams]);
+  }, [
+    nameParams,
+    categoryParams,
+    statusParams,
+    minPriceParams,
+    maxPriceParams,
+  ]);
 
   return (
     <div>

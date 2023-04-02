@@ -12,6 +12,8 @@ const CariMobil = () => {
   const nameParams = searchParams.get("name");
   const categoryParams = searchParams.get("category");
   const statusParams = searchParams.get("status");
+  const minPriceParams = searchParams.get("minPrice");
+  const maxPriceParams = searchParams.get("maxPrice");
 
   useEffect(() => {
     if (nameParams) {
@@ -24,6 +26,9 @@ const CariMobil = () => {
 
     if (statusParams) {
       seStatus(statusParams);
+    }
+    if (minPriceParams && maxPriceParams) {
+      setPrice(`${minPriceParams} - ${maxPriceParams}`);
     }
   }, []);
 
@@ -39,6 +44,10 @@ const CariMobil = () => {
 
     if (status) {
       params.append("status", status);
+    }
+    if (price && price !== "none") {
+      params.append("minPrice", price.split(" - ")[0]);
+      params.append("maxPrice", price.split(" - ")[1]);
     }
     navigate({
       pathname: "/searchcar",
@@ -83,10 +92,18 @@ const CariMobil = () => {
               value={price}
               onChange={(e) => setPrice(e.target.value)}
             >
-              <option selected>Masukkan Harga Sewa Perhari</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option value={"none"} selected>
+                Masukkan Harga Sewa Perhari
+              </option>
+              <option value="500000 - 1000000">
+                Rp. 500.000 - Rp.1.000.000
+              </option>
+              <option value="1500000 - 2000000">
+                Rp. 1.500.000 - Rp. 2.000.000
+              </option>
+              <option value="3000000 - 5000000">
+                Rp. 3.000.000 - Rp. 5.000.000
+              </option>
             </select>
           </Col>
           <Col>
