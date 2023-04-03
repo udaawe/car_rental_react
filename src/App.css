@@ -306,7 +306,7 @@
 }
 
 .swiper-slide {
-  text-align: center;
+  /* text-align: center; */
   font-size: 18px;
   background: #f1f3ff;
   border-radius: 8px;
@@ -314,7 +314,7 @@
 
   /* Center slide text vertically */
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   width: 650px !important;
   margin-bottom: 50px;
@@ -328,4 +328,8 @@
 .testimonial-body {
   display: flex;
   align-items: center;
+}
+
+.checked {
+  color: orange;
 }
