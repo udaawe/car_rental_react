@@ -54,6 +54,17 @@
   font-size: 14px;
 }
 
+/* Testimonial */
+.testimonial h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.testimonial p {
+  font-weight: 700;
+  font-size: 14px;
+}
+
 /* Main */
 .why-us .card {
   margin-top: 10px;
@@ -72,50 +83,6 @@
 .card h1 {
   font-weight: 700;
   font-size: 16px;
-}
-
-/* Testimonial */
-.testimonial h1 {
-  font-weight: 700;
-  font-size: 24px;
-}
-
-.testimonial p {
-  font-weight: 700;
-  font-size: 14px;
-}
-
-.owl-carousel h5 {
-  color: #fff;
-  font-size: 18px;
-}
-
-.owl-carousel p {
-  color: #dddddd;
-  font-size: 14px;
-}
-
-.owl-carousel .card-body {
-  background-color: #f1f3ff;
-}
-
-.owl-carousel img {
-  height: 80px !important;
-  width: 80px !important;
-}
-
-.owl-carousel p {
-  font-weight: 700;
-  font-size: 14px;
-  color: #000000;
-}
-
-.testimonial-body {
-  padding: 35px 25px;
-  display: flex;
-  flex-direction: row;
-  justify-items: space-between;
-  align-items: center;
 }
 
 .rounded-circle {
@@ -328,4 +295,37 @@
   background: #f1f3ff;
   height: 250px;
   width: 100%;
+}
+
+/* Testimonial */
+
+.swiper {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #f1f3ff;
+  border-radius: 8px;
+  padding: 20px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 650px !important;
+  margin-bottom: 50px;
+}
+
+.swiper-slide img {
+  display: block;
+  object-fit: cover;
+}
+
+.testimonial-body {
+  display: flex;
+  align-items: center;
 }
